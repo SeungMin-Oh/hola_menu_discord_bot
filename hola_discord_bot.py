@@ -8,7 +8,7 @@ import os
 
 # Discord 봇 토큰
 
-DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 intents = discord.Intents.default()
 intents.message_content = True  # 메시지 콘텐츠를 수신하기 위해 필요
