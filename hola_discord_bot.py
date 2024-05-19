@@ -20,7 +20,7 @@ def get_latest_post(username):
     L = instaloader.Instaloader()
     profile = instaloader.Profile.from_username(L.context, username)
     latest_post = next(profile.get_posts())
-    return latest_post.url
+    return latest_post.caption
 
 # 봇이 메시지를 보낼 채널 ID를 저장하는 변수
 scheduled_channel_id = None
